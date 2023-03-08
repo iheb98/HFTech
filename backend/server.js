@@ -105,8 +105,5 @@ app.get('*', (req, res) => {
 })
 require('./config/passport')(passport);
 
-app.use('/', (req, res) => {
-  res.json({ message: "Test successful" });
-})
 
 app.listen(port);
