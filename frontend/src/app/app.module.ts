@@ -88,12 +88,12 @@ import { UpdateSpendingComponent } from './components/spendings/update-spending/
     NgbModule,
     ChartModule,
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSyDVfixFw6er4liWHwp82r3_UzVPpa1uAWI",
-      authDomain: "stock-mbh.firebaseapp.com",
-      projectId: "stock-mbh",
-      storageBucket: "stock-mbh.appspot.com",
-      messagingSenderId: "849690852076",
-      appId: "1:849690852076:web:996957b4d60a19833743c9"
+      apiKey: "AIzaSyBAbBvy4x5oWGeh6JKc7U-2YYvjCt8lAkk",
+      authDomain: "hftech-f8d95.firebaseapp.com",
+      projectId: "hftech-f8d95",
+      storageBucket: "hftech-f8d95.appspot.com",
+      messagingSenderId: "833287864088",
+      appId: "1:833287864088:web:2f3aca76a78089e2c1286d"
     }),
     AngularFireStorageModule,
     NgxLoadingXModule
