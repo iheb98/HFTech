@@ -12,7 +12,7 @@ require('dotenv/config');
 
 
 // **************************************** CORS ****************************************
-var allowedDomains = ['https://stock-mbh.herokuapp.com', 'http://localhost:4200','https://inventorymngt.herokuapp.com','https://stock-mbh.onrender.com'];
+var allowedDomains = ['https://stock-mbh.herokuapp.com', 'http://localhost:4200', 'https://inventorymngt.herokuapp.com', 'https://stock-mbh.onrender.com'];
 
 /*
 var corsOptions = {
@@ -99,7 +99,10 @@ mongoose.connect(process.env.DB_CONNECTION,
   () => {
     console.log('connected to Database');
   });
-
+app.use(express.static('public'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
 require('./config/passport')(passport);
 
 app.use('/', (req, res) => {
